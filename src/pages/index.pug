@@ -13,12 +13,19 @@ html(lang='en')
         include ./../blocks/header/header.pug
         include ./../blocks/list-item/list-item.pug
         include ./../blocks/navigation/navigation.pug
+        include ./../blocks/feature/feature.pug
         //-include ./../blocks/footer/footer.pug
         
         .container
             +header
             main
                 section.features
+                    +feature({title:'Sell any product online',text:'Over 92% of computers are infected with Adware and spyware. Such software is '})
+                    +feature({title:'Responsive, HTML5, CSS3',text:'Computers have become ubiquitous in almost every facet of our lives. At work,'})
+                    +feature({title:'Very easy to customize',text:'Many of us are so used to working on a computer desktop that when it comes '})
+                    +feature({title:'Designed to convert',text:'If you are looking for a new way to promote your business that won’t cost '})
+                    +feature({title:'Unlimited colors',text:'Audio player software is used to play back sound recordings in one of the many'})
+                    +feature({title:'With no boundaries',text:'Now, if you are interested in being the best player, getting really good money and'})
                 section.dontleave
                 section.slider-screenshots
                 section.pricing
