@@ -5,10 +5,15 @@ mixin header()
                 .header__brand
                     img(src="assets/img/logo.png", alt="logo")
                 nav.header__nav
-                    //+navigation
-                    //+btn
+                    +navigation
+                    +btn({text:'Download Now'})
             section.header__banner
-                h1.header__banner__title="A Powerful & Unique App Landing Template"
-                p.header__banner__text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                ul.header__banner__list
-                    +list-item({text:''})
+                .header__banner__text-container
+                    h1.header__banner__title="A Powerful & Unique App Landing Template"
+                    p.header__banner__text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    ul.header__banner__list
+                        +list-item({text:'Unlimited colors: banner with images, slider or video'})
+                        +list-item({text:'Fully Responsive and powered by HTML5 and CSS3'})
+                        +list-item({text:'Very easy to customize : set up in minutes'})
+                    +btn({text:'Start Exploring Us'})
+                img.header__banner__image(src="assets/img/iphones.png", alt="iphones")
