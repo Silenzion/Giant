@@ -1,0 +1,15 @@
+mixin button(params={})
+    - const{mods='',text='',arrowIcon=false}=params;
+    -const className = 'button';
+    -
+     let modsClasses = '';
+        if (mods){
+            const modsList= mods.split(',');
+            for(let i = 0; i < modsList.length;i++){
+                modsClasses=modsClasses+' '+className+'_'+modsList[i];
+            }
+        }
+    
+    
+    button(type='button',class=className+modsClasses)=text
+        

@@ -1,1 +1,1 @@
-import './footer.scss';
+import './btn.scss';

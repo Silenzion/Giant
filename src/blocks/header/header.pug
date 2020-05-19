@@ -1,0 +1,14 @@
+mixin header()
+    header.header
+        .content-container
+            .header__header
+                .header__brand
+                    img(src="assets/img/logo.png", alt="logo")
+                nav.header__nav
+                    //+navigation
+                    //+btn
+            section.header__banner
+                h1.header__banner__title="A Powerful & Unique App Landing Template"
+                p.header__banner__text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                ul.header__banner__list
+                    +list-item({text:''})
