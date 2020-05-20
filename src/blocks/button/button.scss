@@ -1,4 +1,32 @@
-@import './../../assets/scss/vars.scss';
-.button_video{
-    background-image: $main-gradient;
+@import "./../../assets/scss/vars.scss";
+.button {
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: $white;
+    &_arrow {
+    }
+    &_active {
+        background-image: $main-gradient;
+    }
+    &_video {
+        background-image: $main-gradient;
+    }
+    &_buy {
+        width: 139px;
+        height: 40px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        border: 3px solid rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        background-image: $main-gradient;
+    }
+    #{$hover} {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 5px solid rgba(0, 0, 0, 0.1);
+    }
 }

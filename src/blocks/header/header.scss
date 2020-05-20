@@ -3,10 +3,18 @@
     background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
     min-height: 800px;
     color: $white;
+    padding-top:30px;
     &__header{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        .button{
+            margin-left: 50px;
+        }
     }
 }
