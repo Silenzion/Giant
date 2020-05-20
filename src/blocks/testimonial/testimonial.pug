@@ -1,0 +1,21 @@
+mixin testimonial(params={})
+    -const {mods='',linkAvatar='',text='',username='',company='Apple Inc.'}=params;
+        //-mods:'center'
+    -const className = 'testimonial';
+    
+    -
+        let modsClasses = '';
+            if (mods){
+                const modsList= mods.split(',');
+                for(let i = 0; i < modsList.length;i++){
+                    modsClasses=modsClasses+' '+className+'_'+modsList[i];
+                }
+            }
+    div(class=className+modsClasses)
+        .testimonial__text=text
+        .testimonial__user
+            .testimonial__user__avatar
+                img(src=linkAvatar, alt="")
+            .testimonial__user__about
+                .testimonial__user__about__username=username
+                .testimonial__user__about__company=company
