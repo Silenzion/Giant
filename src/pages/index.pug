@@ -12,6 +12,7 @@ html(lang='en')
         include ./../blocks/button/button.pug
         include ./../blocks/header/header.pug
         include ./../blocks/download/download.pug
+        include ./../blocks/price/price.pug
         include ./../blocks/list-item/list-item.pug
         include ./../blocks/social-icons/social-icons.pug
         include ./../blocks/navigation/navigation.pug
@@ -52,10 +53,13 @@ html(lang='en')
                     .content-container
                         h2.pricing__title='We\'ve got the perfect package for you'
                         .pricing__text='Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?'
-                        //-pricing
+                        .pricing-container
+                            +price({title:'Basic',cost:'12.0',items:['One User','Multiple Access','SMS Support','24/7 Online Support']})
+                            +price({mods:'active',title:'Standard',cost:'24.0',items:['Five User','Multiple Access','SMS Support','24/7 Online Support']})
+                            +price({title:'Premium',cost:'250.0',items:['Twenty User','Multiple Access','SMS Support','24/7 Online Support']})
+                            +price({title:'Enterprise',cost:'999.0',items:['Unlimited User','Multiple Access','SMS Support','24/7 Online Support']})
                 section.video
                     +button({mods:'video'})
-                    //-button arrow
                 section.testimonials
                     .content-container
                         h2.testimonials__title='What our customers are saying'
