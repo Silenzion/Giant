@@ -36,6 +36,12 @@ h2 {
         max-width: 1140px;
         margin: 0 auto;
     }
+    .video{
+        min-height:400px;
+        background: url('../assets/img/video-background.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 }
 
 @media (max-width: 576px) {
