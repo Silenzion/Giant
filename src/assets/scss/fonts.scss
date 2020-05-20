@@ -6,5 +6,60 @@
          url("./../fonts/Robotolight.woff") format("woff"),
          url("./../fonts/Robotolight.ttf") format("truetype"); 
 }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Regular"), local("Roboto Regular"), url("../fonts/Roboto.woff2") format("woff2"),
+         url("./../fonts/Roboto.woff") format("woff"),
+         url("./../fonts/Roboto.ttf") format("truetype"); 
+}
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto Medium"), url("../fonts/Robotomedium.woff2") format("woff2"),
+         url("./../fonts/Robotomedium.woff") format("woff"),
+         url("./../fonts/Robotomedium.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Dosis Regular"), local("Dosis Regular"), url("../fonts/Dosis-Regular.eot") format("eot"),
+         url("./../fonts/Dosis-Regular.woff") format("woff"),
+         url("./../fonts/Dosis-Regular.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Dosis Medium"), local("Dosis Medium"), url("../fonts/Dosis-Medium.eot") format("eot"),
+         url("./../fonts/Dosis-Medium.woff") format("woff"),
+         url("./../fonts/Dosis-Medium.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Dosis Bold"), local("Dosis Bold"), url("../fonts/Dosis-Bold.eot") format("eot"),
+         url("./../fonts/Dosis-Bold.woff") format("woff"),
+         url("./../fonts/Dosis-Bold.ttf") format("truetype"); 
+}
+/*
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 00;
+    src: local("Dosis"), local("Dosis"), url("../fonts/Dosis.woff2") format("woff2"),
+         url("./../fonts/Dosis.woff") format("woff"),
+         url("./../fonts/Dosis.ttf") format("truetype"); 
+}
+*/
+//**TODO:уточнить насчёт варианта semi-bold
+
+
 
 

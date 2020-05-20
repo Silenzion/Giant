@@ -1,3 +1,12 @@
 mixin list-item(params={})
-    -const {text=''}=params;
-    li.list__item=text
+    -const {mods='',text=''}=params;
+    -const className = 'list__item';
+    -
+     let modsClasses = '';
+        if (mods){
+            const modsList= mods.split(',');
+            for(let i = 0; i < modsList.length;i++){
+                modsClasses=modsClasses+' '+className+'_'+modsList[i];
+            }
+        }
+    li(class=className+modsClasses)=text
