@@ -1,0 +1,27 @@
+mixin price(params={})
+    -const {mods='',title='',cost=0,items=[]}=params;
+    -const className = 'price';
+
+        -
+            let modsClasses = '';
+                if (mods){
+                    const modsList= mods.split(',');
+                    for(let i = 0; i < modsList.length;i++){
+                        modsClasses=modsClasses+' '+className+'_'+modsList[i];
+                    }
+                }
+        mixin cost(params={})
+            -const {value=0}= params;
+            .cost-container
+                span.cost__currency='$'
+                span.cost__value=cost
+                span.cost__period='/m'
+
+        div(class=className+modsClasses)
+            .price__title=title
+            .price__cost
+                +cost({value:cost})
+            ul.price__features
+                each item in items
+                    li.price__features__item=item
+            +button({text:'Buy Now'})

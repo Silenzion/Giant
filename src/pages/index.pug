@@ -59,7 +59,10 @@ html(lang='en')
                     .content-container
                         h2.testimonials__title='What our customers are saying'
                         .testimonials__text='Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?'
-                        //-testimonials
+                        .testimonials-container
+                            +testimonial({linkAvatar:'assets/img/users/user1.png',text:'The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.',username:'Alexandra Bullock'})
+                            +testimonial({linkAvatar:'assets/img/users/user1.png',text:'Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.',username:'Gary Sebastian'})
+                            +testimonial({linkAvatar:'assets/img/users/user1.png',text:'Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.',username:'Samantha Bilbau'})
                 section.downloads
                     .content-container
                         h2.downloads__title='Download Giant App Now'
