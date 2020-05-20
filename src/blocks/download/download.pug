@@ -1,0 +1,8 @@
+mixin download(params={})
+    -const {linkIcon='',text=''}=params;
+    .download
+        .download__icon
+            img(src=linkIcon, alt="icon")
+        .download__text
+            p.download__text__title="DOWNLOAD"
+            p.download__text__details=text
