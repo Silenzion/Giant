@@ -1,0 +1,22 @@
+mixin social-icons()
+    mixin social-icon(params={})
+        -const {mods='',iconClass=''}=params;
+        //-mods:'active'
+        -const className = 'social-icons__item';
+    
+        -
+            let modsClasses = '';
+                if (mods){
+                    const modsList= mods.split(',');
+                    for(let i = 0; i < modsList.length;i++){
+                        modsClasses=modsClasses+' '+className+'_'+modsList[i];
+                    }
+                }
+        div(class=className+modsClasses)
+            i(class=iconClass)
+    
+    .social-icons-container
+        +social-icon({iconClass:'fab fa-facebook-f'})
+        +social-icon({iconClass:'fab fa-twitter'})
+        +social-icon({mods:'active',iconClass:'fab fa-dribbble'})
+        +social-icon({iconClass:'fab fa-behance'})

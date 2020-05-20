@@ -12,9 +12,10 @@ html(lang='en')
         include ./../blocks/button/button.pug
         include ./../blocks/header/header.pug
         include ./../blocks/list-item/list-item.pug
+        include ./../blocks/social-icons/social-icons.pug
         include ./../blocks/navigation/navigation.pug
         include ./../blocks/feature/feature.pug
-        //-include ./../blocks/footer/footer.pug
+        include ./../blocks/footer/footer.pug
         
         .container
             +header
@@ -65,4 +66,4 @@ html(lang='en')
                             //-download
                             //-download
                             //-download
-            footer
+            +footer
