@@ -1,8 +1,8 @@
-.btn_mobile-menu{
+.button_mobile-menu{
     display:none;
 }
 @media (max-width: 576px) {
-    .btn_mobile-menu{
+    .button_mobile-menu{
         display: block;
     }
     .navigation-list{

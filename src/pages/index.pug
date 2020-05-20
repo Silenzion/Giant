@@ -9,7 +9,7 @@ html(lang='en')
         block vars
 
     body
-        include ./../blocks/btn/btn.pug
+        include ./../blocks/button/button.pug
         include ./../blocks/header/header.pug
         include ./../blocks/list-item/list-item.pug
         include ./../blocks/navigation/navigation.pug
@@ -51,8 +51,8 @@ html(lang='en')
                         .pricing__text='Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?'
                         //-pricing
                 section.video
-                    +btn({mods:'video'})
-                    //-btn arrow
+                    +button({mods:'video'})
+                    //-button arrow
                 section.testimonials
                     .content-container
                         h2.testimonials__title='What our customers are saying'
