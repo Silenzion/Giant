@@ -1,0 +1,12 @@
+mixin slider()
+    .slider-container
+        +button({mods:'arrow',directionArrow:'left'})
+        .slider__screenshots-container
+            img.slider__screenshots-container__item(src="assets/img/screens/screen_1.png", alt="screen1")
+            img.slider__screenshots-container__item(src="assets/img/screens/screen_2.png", alt="screen2")
+            img.slider__screenshots-container__item(src="assets/img/screens/screen_3.png", alt="screen3")
+            img.slider__screenshots-container__items.slider__screenshots-container__item_current(src="assets/img/screens/screen_4.png", alt="screen4")
+            img.slider__screenshots-container__item(src="assets/img/screens/screen_5.png", alt="screen5")
+            img.slider__screenshots-container__item(src="assets/img/screens/screen_6.png", alt="screen6")
+            img.slider__screenshots-container__item(src="assets/img/screens/screen_7.png", alt="screen7")
+        +button({mods:'arrow',directionArrow:'right'})

@@ -1,0 +1,76 @@
+@import "./../../assets/scss/vars.scss";
+.price {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 263px;
+    //-height: 481px;
+    background-color: $gray-background;
+    padding-bottom:40px ;
+    &__title {
+        color: $price-text-color;
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 18px;
+        font-family: $font-secondary;
+    }
+    &__cost {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $price-text-color;
+        font-weight: bold;
+        height: 120px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        font-family: $font-secondary;
+        background-color: $white;
+        .cost {
+            height: 37px;
+            &__currency {
+                vertical-align: top;
+                font-size: 18px;
+            }
+            &__value {
+                font-size: 37px;
+            }
+            &__period {
+                font-size: 18px;
+            }
+        }
+    }
+    &__features {
+        width: 203px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         &__item{
+            text-align: center;
+            width: 100%;
+            border-bottom: 1px dashed $light-gray;
+            &:first-child{
+                margin-top: 0;
+            }
+            margin-top: 20px;
+        }
+        &+p{
+            margin-top: 50px;
+            margin-bottom: 14px;
+        }
+    }
+    &_active {
+        .price__cost {
+            color: white;
+            background-image: $main-gradient;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+    }
+    &__footer-text {
+        color: #aaaaaa;
+        line-height: 23.95px;
+    }
+}
