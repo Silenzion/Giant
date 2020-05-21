@@ -123,15 +123,27 @@ h2 {
     }
     .testimonials {
         &-container {
+            position:relative;
+            width:100%;
+            max-width: 1320px;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            .testimonial{
+                margin-right:30px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .button{
+                
+            }
         }
     }
     .downloads {
         background-image: $main-gradient;
         h2 {
             color: $white;
+            margin-bottom: 80px;
         }
         &-container{
             width:100%;
