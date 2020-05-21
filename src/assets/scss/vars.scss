@@ -1,9 +1,17 @@
 $main-gradient:linear-gradient(to right, #fd712c 0%, #f21780 100%);
+//-colors
 $orange:#FB6635;
 $pink:#f31f79;
+$main-text-color:#777777;
+$secondary-text-color:#222222;
+$light-gray:#eeeeee;
 $white:#ffffff;
-
+$gray-background:#f7fafc;
+$footer-background:#222222;
+$price-text-color:#333333;
+//-fonts
 $font-main: "Roboto", Arial, sans-serif;
 $font-secondary:"Dosis", Arial, sans-serif;
-
+//-state
 $hover: "&:hover, &:focus, &:active";
+//-media
