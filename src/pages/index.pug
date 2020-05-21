@@ -25,12 +25,15 @@ html(lang='en')
             main
                 section.features
                     .content-container
-                        +feature({iconClass:'fa fa-tags',title:'Sell any product online',text:'Over 92% of computers are infected with Adware and spyware. Such software is '})
-                        +feature({iconClass:'fa fa-fire-extinguisher',title:'Responsive, HTML5, CSS3',text:'Computers have become ubiquitous in almost every facet of our lives. At work,'})
-                        +feature({iconClass:'fa fa-cog',title:'Very easy to customize',text:'Many of us are so used to working on a computer desktop that when it comes '})
-                        +feature({iconClass:'fa fa-file-alt',title:'Designed to convert',text:'If you are looking for a new way to promote your business that won’t cost '})
-                        +feature({iconClass:'fa fa-paint-brush',title:'Unlimited colors',text:'Audio player software is used to play back sound recordings in one of the many'})
-                        +feature({iconClass:'fa fa-life-ring',title:'With no boundaries',text:'Now, if you are interested in being the best player, getting really good money and'})
+                        .content-container__column
+                            +feature({iconClass:'fa fa-tags',title:'Sell any product online',text:'Over 92% of computers are infected with Adware and spyware. Such software is '})
+                            +feature({iconClass:'fa fa-fire-extinguisher',title:'Responsive, HTML5, CSS3',text:'Computers have become ubiquitous in almost every facet of our lives. At work,'})
+                        .content-container__column
+                            +feature({iconClass:'fa fa-cog',title:'Very easy to customize',text:'Many of us are so used to working on a computer desktop that when it comes '})
+                            +feature({iconClass:'fa fa-file-alt',title:'Designed to convert',text:'If you are looking for a new way to promote your business that won’t cost '})
+                        .content-container__column
+                            +feature({iconClass:'fa fa-paint-brush',title:'Unlimited colors',text:'Audio player software is used to play back sound recordings in one of the many'})
+                            +feature({iconClass:'fa fa-life-ring',title:'With no boundaries',text:'Now, if you are interested in being the best player, getting really good money and'})
                 section.about-ux
                     .content-container
                         img(src="assets/img/iphone.png", alt="iphone")
