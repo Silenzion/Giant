@@ -1,20 +1,50 @@
-@import './../../assets/scss/vars.scss';
-.header{
+@import "./../../assets/scss/vars.scss";
+.header {
     background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
     min-height: 800px;
     color: $white;
-    padding-top:30px;
-    &__header{
+    padding-top: 30px;
+    &__header {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    &__nav{
+    &__nav {
         display: flex;
         align-items: center;
-        .button{
+        .button {
             margin-left: 50px;
+        }
+    }
+    &__banner {
+        width: 100%;
+        height: 100%;
+        margin-top: 150px;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        &__text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 500px;
+            width: 100%;
+            h1 {
+                margin-bottom: 23px;
+            }
+            p {
+                margin-bottom: 23px;
+                font-weight: 300;
+                line-height: 24px;
+            }
+            .button{
+                margin-top:40px;
+            }
+        }
+        &__image {
+            position: absolute;
+            right: -189.5px;
         }
     }
 }
