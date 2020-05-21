@@ -1,3 +1,10 @@
+@import "./../../assets/scss/vars.scss";
 .footer{
+    background: $footer-background;
     min-height: 180px;
+    .content-container{
+        padding-top: 59px;
+        padding-bottom: 59px;
+
+    }
 }
