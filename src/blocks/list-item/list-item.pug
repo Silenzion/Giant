@@ -1,6 +1,6 @@
 mixin list-item(params={})
     -const {mods='',text=''}=params;
-    //-mods:'white','black'
+    //-mods:black'
     -const className = 'list__item';
     -
      let modsClasses = '';
@@ -10,4 +10,7 @@ mixin list-item(params={})
                 modsClasses=modsClasses+' '+className+'_'+modsList[i];
             }
         }
-    li(class=className+modsClasses)=text
+    li(class=className+modsClasses)
+        span.list__item__box
+        i.fa.fa-check
+        span.list__item__text=text
