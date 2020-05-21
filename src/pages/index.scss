@@ -7,33 +7,35 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
+    color: $main-text-color;
 }
 h1,
 h2 {
+    font-weight: bold;
     font-family: $font-secondary;
     text-align: center;
 }
 h1 {
     font-size: 54px;
-    font-weight: bold;
     line-height: 60px;
     text-align: center;
 }
 h2 {
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 23px;
+    color: $footer-background;
 }
-.container{
+.container {
     max-width: 1920px;
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     margin: 0 auto;
-    &>*{
-        width:100%;
-        
+    & > * {
+        width: 100%;
     }
-    .content-container{
+    .content-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,29 +44,90 @@ h2 {
         max-width: 1140px;
         margin: 0 auto;
     }
-    .features{
-        .content-container{
+    .features {
+        .content-container {
             padding-top: 120px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            &__column{
-                width: 100%;
-                height:230px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
+            border-bottom: 2px solid $light-gray;
+            padding-bottom: 120px;
+        }
+        &__column {
+            width: 100%;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
     }
-    .video{
-        height:400px;
-        background: url('../assets/img/video-background.png') no-repeat;
+    .about-ux {
+        .content-container {
+            padding-top: 120px;
+            min-height: 690px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__image {
+            height: 534px;
+            width: 577px;
+            background: url("../assets/img/iphone.png") no-repeat;
+            background-size: cover;
+            //-background-position: center center;
+        }
+
+        &__text-container {
+            width: 100%;
+            max-width: 515px;
+        }
+        &__ul {
+            margin-top: 37px;
+        }
+    }
+    .slider-screenshots {
+        .content-container {
+            padding-top: 120px;
+            background-color: $gray-background;
+        }
+        &__text {
+            width: 100%;
+            max-width: 656px;
+            text-align: center;
+        }
+    }
+    .pricing {
+        .content-container {
+            padding-top: 120px;
+        }
+        &__text {
+            width: 100%;
+            max-width: 656px;
+            text-align: center;
+        }
+        &-container {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .video {
+        height: 400px;
+        background: url("../assets/img/video-background.png") no-repeat;
         background-size: cover;
         background-position: center center;
-        .content-container{
+        .content-container {
             justify-content: center;
         }
+    }
+    .testimonials{
+        .content-container{
+        }
+        &-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
     }
 }
 
