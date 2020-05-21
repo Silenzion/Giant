@@ -1,0 +1,32 @@
+@import "./../../assets/scss/vars.scss";
+.download {
+    border-radius: 3px;
+    width: 362px;
+    height: 117px;
+    max-width: 362px;
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    &__icon {
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 117px;
+        height: 117px;
+        background-color: $gray-background;
+    }
+    &__text {
+        &__title {
+            padding-top: 30px;
+            padding-left: 18px;
+            color: $secondary-text-color;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        &__details {
+            padding-top: 14px;
+            padding-left: 18px;
+        }
+    }
+}

@@ -36,6 +36,8 @@ h2 {
         width: 100%;
     }
     .content-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -46,30 +48,28 @@ h2 {
     }
     .features {
         .content-container {
-            padding-top: 120px;
             display: flex;
             flex-direction: row;
             border-bottom: 2px solid $light-gray;
             padding-bottom: 120px;
-            >*{
-                margin-right:42px;
-                &:last-child{
+            > * {
+                margin-right: 42px;
+                &:last-child {
                     margin-right: 0;
                 }
             }
-        
-        &__column {
-            width: 100%;
-            height: 230px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+
+            &__column {
+                width: 100%;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
         }
-    }
     }
     .about-ux {
         .content-container {
-            padding-top: 120px;
             min-height: 690px;
             display: flex;
             flex-direction: row;
@@ -79,7 +79,7 @@ h2 {
             height: 534px;
             width: 577px;
             background: url("../assets/img/iphone.png") no-repeat;
-            background-size:100%;
+            background-size: 100%;
             //-background-position: center center;
         }
 
@@ -93,7 +93,6 @@ h2 {
     }
     .slider-screenshots {
         .content-container {
-            padding-top: 120px;
             background-color: $gray-background;
         }
         &__text {
@@ -103,9 +102,6 @@ h2 {
         }
     }
     .pricing {
-        .content-container {
-            padding-top: 120px;
-        }
         &__text {
             width: 100%;
             max-width: 656px;
@@ -125,20 +121,24 @@ h2 {
             justify-content: center;
         }
     }
-    .testimonials{
-        .content-container{
-        }
-        &-container{
+    .testimonials {
+        &-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
-        
     }
-    .downloads{
+    .downloads {
         background-image: $main-gradient;
-        h2{
-            color: $main-text-color;
+        h2 {
+            color: $white;
+        }
+        &-container{
+            width:100%;
+            max-width: 1142px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 }

@@ -3,9 +3,8 @@
     background: $footer-background;
     min-height: 180px;
     .content-container{
-        padding-top: 59px;
+        padding-top: 59px !important;
         padding-bottom: 59px;
-
     }
     .copyright{
         margin-top: 30px;
