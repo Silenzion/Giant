@@ -142,30 +142,35 @@ h2 {
             max-width: 656px;
             text-align: center;
         }
+        .content-container{
+            position:relative;
+            .controls {
+                display: flex;
+                align-items: center;
+                height: 500px;
+                position: absolute;
+                bottom: 0;
+                &_prev {
+                    left: -5%;
+                }
+                &_next {
+                    right: -5%;
+                }
+            }
+        }
         &-container {
             margin-top:80px;
-            position:relative;
             width:100%;
             max-width: 1320px;
             display: flex;
             flex-direction: row;
             .testimonial{
                 margin-right:30px;
-                &:nth-child(4){
+                &:nth-child(3){
                     margin-right: 0;
                 }
             }
-            .button{
-                position: absolute;
-                &:first-child{
-                    left: -8%;
-                    top:50%;
-                }
-                &:last-child{
-                    right: -8%;
-                    top:50%;
-                }
-            }
+            
         }
     }
     .downloads {
@@ -183,6 +188,52 @@ h2 {
         }
     }
 }
-
-@media (max-width: 576px) {
+@media #{$widthLaptop}{
+    .container{
+    .testimonials{
+        .content-container{
+            .controls {
+                &_prev {
+                    left: 25%;
+                }
+                &_next {
+                    right: 25%;
+                }
+            }
+        }
+        &-container{
+            justify-content: center;
+            align-items: center;
+            .testimonial{
+                &:first-child{
+                    display: none;
+                }
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    
+}
+}
+}
+@media #{$widthIPad}{
+    .container{
+        .testimonials{
+            .content-container{
+                .controls {
+                    &_prev {
+                       //- left: 15px;
+                    }
+                    &_next {
+                        //-right: 15px;
+                    }
+                }
+            }
+    }
+    
+}
+}
+@media #{$widthMobile} {
+    .container{}
 }
