@@ -1,6 +1,6 @@
 # Giant
 
-Test task for a company.
+Test task .
 
 Adaptive landing.
 
